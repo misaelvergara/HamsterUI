@@ -185,7 +185,7 @@ public class Device {
         }
 
         /* Utility: stores fingerprint data in the Mysql database
-           Parameter: fingerprint database
+           Parameter: fingerprint data
          */
         private void save(String fir) {
             try {
