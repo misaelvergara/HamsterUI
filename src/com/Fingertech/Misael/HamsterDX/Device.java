@@ -219,7 +219,7 @@ public class Device {
         deviceEnumInfo = bsp.new DEVICE_ENUM_INFO();
         bsp.EnumerateDevice(deviceEnumInfo);
         //instantiates DEVICE_ENUM_INFO and passes its values onto EnumerateDevice for
-        //a quick check up
+        //a quick check up for connected devices
 
         if (bsp.IsErrorOccured()) {
             out("[REASON] SDK Triggered Error");
@@ -275,7 +275,7 @@ public class Device {
     }
 
     /*  . captures a fingerprint
-        . refers to the collected fingerprint data to a string
+        . refers the collected fingerprint data to a string
      */
     private boolean doCapture() {
         /*  Erases data of past captured fingerprints.
